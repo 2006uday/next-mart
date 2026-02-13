@@ -12,7 +12,7 @@ const products = [
     rating: 4.0,
     badge: "Hot",
     badgeColor: "bg-pink-500",
-    image: "/p1.png",
+    // image: "",
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const products = [
     rating: 3.5,
     badge: "Sale",
     badgeColor: "bg-blue-500",
-    image: "/p2.png",
+    // image: "",
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const products = [
     rating: 4.0,
     badge: "New",
     badgeColor: "bg-green-500",
-    image: "/p3.png",
+    // image: "",
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const products = [
     price: 17.85,
     oldPrice: 19.8,
     rating: 4.0,
-    image: "/p4.png",
+    // image: "",
   },
   {
     id: 5,
@@ -58,7 +58,7 @@ const products = [
     rating: 4.0,
     badge: "-14%",
     badgeColor: "bg-orange-500",
-    image: "/p5.png",
+    // image: "",
   },
 
 
@@ -73,7 +73,7 @@ const products = [
     rating: 4.0,
     badge: "Hot",
     badgeColor: "bg-pink-500",
-    image: "/p1.png",
+    // image: "",
   },
   {
     id: 7,
@@ -85,7 +85,7 @@ const products = [
     rating: 3.5,
     badge: "Sale",
     badgeColor: "bg-blue-500",
-    image: "/p2.png",
+    // image: "",
   },
   {
     id: 8,
@@ -97,7 +97,7 @@ const products = [
     rating: 4.0,
     badge: "New",
     badgeColor: "bg-green-500",
-    image: "/p3.png",
+    // image: "",
   },
   {
     id: 9,
@@ -107,7 +107,7 @@ const products = [
     price: 17.85,
     oldPrice: 19.8,
     rating: 4.0,
-    image: "/p4.png",
+    // image: "",
   },
   {
     id: 10,
@@ -119,7 +119,7 @@ const products = [
     rating: 4.0,
     badge: "-14%",
     badgeColor: "bg-orange-500",
-    image: "/p5.png",
+    // image: "",
   },
 
 
@@ -133,7 +133,7 @@ const products = [
     rating: 4.0,
     badge: "Hot",
     badgeColor: "bg-pink-500",
-    image: "/p1.png",
+    // image: "",
   },
   {
     id: 12,
@@ -145,7 +145,7 @@ const products = [
     rating: 3.5,
     badge: "Sale",
     badgeColor: "bg-blue-500",
-    image: "/p2.png",
+    // image: "",
   },
   {
     id: 13,
@@ -157,7 +157,7 @@ const products = [
     rating: 4.0,
     badge: "New",
     badgeColor: "bg-green-500",
-    image: "/p3.png",
+    // image: "",
   },
   {
     id: 14,
@@ -167,7 +167,7 @@ const products = [
     price: 17.85,
     oldPrice: 19.8,
     rating: 4.0,
-    image: "/p4.png",
+    // image: "",
   },
   {
     id: 15,
@@ -179,14 +179,14 @@ const products = [
     rating: 4.0,
     badge: "-14%",
     badgeColor: "bg-orange-500",
-    image: "/p5.png",
+    // image: "",
   },
 ];
 
 const PopularProducts = () => {
   return (
     <section className="max-w-[1500px] mx-auto px-4 py-12">
-      
+
       <div className="flex justify-between items-center mb-8 flex-wrap gap-4">
         <h2 className="text-3xl font-semibold">Popular Products</h2>
 
@@ -207,7 +207,7 @@ const PopularProducts = () => {
             key={product.id}
             className="border rounded-2xl p-4 hover:shadow-lg transition relative bg-white"
           >
-            
+
             {product.badge && (
               <span
                 className={`absolute top-4 left-4 text-xs text-white px-3 py-1 rounded-full ${product.badgeColor}`}
@@ -217,34 +217,33 @@ const PopularProducts = () => {
             )}
 
             <div className="flex justify-center mb-4">
-              <Image
+              {/* <Image
                 src={product.image}
                 alt={product.title}
                 width={160}
                 height={160}
                 className="object-contain h-[150px]"
-              />
+              /> */}
             </div>
 
-            
+
             <p className="text-xs text-gray-400 mb-1">{product.category}</p>
 
-            
+
             <h3 className="text-sm font-medium mb-2 line-clamp-2">
               {product.title}
             </h3>
 
-            
+
             <div className="flex items-center gap-1 mb-2">
               {[...Array(5)].map((_, i) => (
                 <Star
                   key={i}
                   size={14}
-                  className={`${
-                    i < Math.round(product.rating)
-                      ? "text-yellow-400 fill-yellow-400"
-                      : "text-gray-300"
-                  }`}
+                  className={`${i < Math.round(product.rating)
+                    ? "text-yellow-400 fill-yellow-400"
+                    : "text-gray-300"
+                    }`}
                 />
               ))}
               <span className="text-xs text-gray-500 ml-1">
@@ -252,12 +251,12 @@ const PopularProducts = () => {
               </span>
             </div>
 
-        
+
             <p className="text-xs text-gray-500 mb-3">
               By <span className="text-green-600">{product.brand}</span>
             </p>
 
-            
+
             <div className="flex justify-between items-center">
               <div>
                 <span className="text-green-600 font-semibold">
