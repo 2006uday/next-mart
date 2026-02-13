@@ -1,3 +1,6 @@
+import Navbar from "@/components/top_navbar";
+import MiddleNavbar from "@/components/middle_navbar";
+import LastNavbar from "@/components/last_navvbar";
 import Image from "next/image";
 import Hero from "@/components/home/Hero";
 import FeaturedCategories from "@/components/home/featured-categories";
