@@ -4,7 +4,7 @@ import FeaturedCategories from "@/components/home/featured-categories";
 import CarT from "@/components/home/Cart";
 import PopularProducts from "@/components/home/PopularProducts";
 
-export default function Home() {
+function page() {
   return (
     <div>
       <Hero />
@@ -12,5 +12,7 @@ export default function Home() {
       <CarT />
       <PopularProducts />
     </div>
-  );
+  )
 }
+
+export default page
