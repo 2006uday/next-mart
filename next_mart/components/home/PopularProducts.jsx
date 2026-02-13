@@ -12,7 +12,7 @@ const products = [
     rating: 4.0,
     badge: "Hot",
     badgeColor: "bg-pink-500",
-    image: "",
+    // image: "",
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const products = [
     rating: 3.5,
     badge: "Sale",
     badgeColor: "bg-blue-500",
-    image: "",
+    // image: "",
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const products = [
     rating: 4.0,
     badge: "New",
     badgeColor: "bg-green-500",
-    image: "/p3.png",
+    // image: "",
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const products = [
     price: 17.85,
     oldPrice: 19.8,
     rating: 4.0,
-    image: "",
+    // image: "",
   },
   {
     id: 5,
@@ -58,7 +58,7 @@ const products = [
     rating: 4.0,
     badge: "-14%",
     badgeColor: "bg-orange-500",
-    image: "",
+    // image: "",
   },
 
 
@@ -73,7 +73,7 @@ const products = [
     rating: 4.0,
     badge: "Hot",
     badgeColor: "bg-pink-500",
-    image: "",
+    // image: "",
   },
   {
     id: 7,
@@ -85,7 +85,7 @@ const products = [
     rating: 3.5,
     badge: "Sale",
     badgeColor: "bg-blue-500",
-    image: "",
+    // image: "",
   },
   {
     id: 8,
@@ -97,7 +97,7 @@ const products = [
     rating: 4.0,
     badge: "New",
     badgeColor: "bg-green-500",
-    image: "",
+    // image: "",
   },
   {
     id: 9,
@@ -107,7 +107,7 @@ const products = [
     price: 17.85,
     oldPrice: 19.8,
     rating: 4.0,
-    image: "/p4.png",
+    // image: "",
   },
   {
     id: 10,
@@ -119,7 +119,7 @@ const products = [
     rating: 4.0,
     badge: "-14%",
     badgeColor: "bg-orange-500",
-    image: "/p5.png",
+    // image: "",
   },
 
 
@@ -133,7 +133,7 @@ const products = [
     rating: 4.0,
     badge: "Hot",
     badgeColor: "bg-pink-500",
-    image: "",
+    // image: "",
   },
   {
     id: 12,
@@ -145,7 +145,7 @@ const products = [
     rating: 3.5,
     badge: "Sale",
     badgeColor: "bg-blue-500",
-    image: "/p2.png",
+    // image: "",
   },
   {
     id: 13,
@@ -157,7 +157,7 @@ const products = [
     rating: 4.0,
     badge: "New",
     badgeColor: "bg-green-500",
-    image: "/p3.png",
+    // image: "",
   },
   {
     id: 14,
@@ -167,7 +167,7 @@ const products = [
     price: 17.85,
     oldPrice: 19.8,
     rating: 4.0,
-    image: "/p4.png",
+    // image: "",
   },
   {
     id: 15,
@@ -179,7 +179,7 @@ const products = [
     rating: 4.0,
     badge: "-14%",
     badgeColor: "bg-orange-500",
-    image: "/p5.png",
+    // image: "",
   },
 ];
 
@@ -217,13 +217,13 @@ const PopularProducts = () => {
             )}
 
             <div className="flex justify-center mb-4">
-              <Image
+              {/* <Image
                 src={product.image}
                 alt={product.title}
                 width={160}
                 height={160}
                 className="object-contain h-[150px]"
-              />
+              /> */}
             </div>
 
 
@@ -241,8 +241,8 @@ const PopularProducts = () => {
                   key={i}
                   size={14}
                   className={`${i < Math.round(product.rating)
-                      ? "text-yellow-400 fill-yellow-400"
-                      : "text-gray-300"
+                    ? "text-yellow-400 fill-yellow-400"
+                    : "text-gray-300"
                     }`}
                 />
               ))}
