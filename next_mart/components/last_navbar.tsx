@@ -4,7 +4,7 @@
 export default function LastNavbar() {
     return (
         <>
-            <div className="flex justify-around items-center mt-3 border-b border-gray-200 border-1 py-3">
+            <div className=" sticky top-0 flex justify-around items-center mt-3 border-b border-gray-200 border-1 py-3">
                 <div className="flex justify-start items-center gap-13">
                     <div className="bg-green-600 p-3">
                         Browse
